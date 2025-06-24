@@ -4,8 +4,8 @@ on:
     branches:
       - main
 jobs:
-  runs-on: ubuntu-latest
   redeploy_Everything:
+    runs-on: ubuntu-latest
     name: Deploying the Everything to staging cluster
     steps:
       - run: |
