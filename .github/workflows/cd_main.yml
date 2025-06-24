@@ -1,8 +1,8 @@
 name: Deploy to staging
 on:
   push:
-    branches: ["main"]
-
+    branches:
+      - main
 jobs:
   runs-on: ubuntu-latest
   redeploy_Everything:
@@ -15,6 +15,3 @@ jobs:
           npm install
           npm run build
           pm2 restart all
-
-
-
